@@ -147,14 +147,25 @@ header {
 
 main {
   padding: 4rem;
-  min-height: calc(100vh-60px); }
-  main .socials {
-    margin-top: 1rem; }
-    main .socials a {
-      padding: 0.4rem; }
-      main .socials a:hover {
-        color: #123c69;
-        transition: all 0.5s ease-out; }
+  min-height: calc(100vh - 60px);
+}
+  
+main .socials {
+  margin-top: 1rem;
+}
+  
+main .socials a {
+  color: #123c69;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  padding: 0.4rem;
+  display: inline-block; /* Ensure transform applies correctly */
+}
+  
+main .socials a:hover {
+  color: #1f3ce0;
+  transform: scale(1.3); /* Adjusted to a more subtle effect */
+}
+  
   main#home {
     /* cursor */
     overflow: hidden;
